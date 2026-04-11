@@ -1,10 +1,6 @@
-let arr=new Array(11,20,39,49,58,67,75);
-//console.log(arr);
-
-let length=arr.length;
-let newArr=new Array()
-
-for(let i=0;i<length;i+=2){
-    newArr.push(arr[i]);
-}
-console.log(newArr);
+let url="https://www.themealdb.com/api/json/v1/1/categories.php"
+fetch(url)
+.then(response=>response.json())
+.then(data=>console.log(data)
+)
+.catch(error=>{console.log("error",error)})
