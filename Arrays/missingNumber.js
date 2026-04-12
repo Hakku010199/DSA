@@ -19,7 +19,7 @@ function check(arr,N){
 function check2(arr,N){
     let tsum=0;
     for(let i=1;i<=N;i++){
-        tsum+=i;
+        tsum+=i;          //also use n*(n+1)/2 for sum.
     }
     let total=0
     for(let j=0;j<arr.length;j++){
